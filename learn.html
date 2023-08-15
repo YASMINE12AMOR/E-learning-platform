@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learn.css">
+    <script src="https://kit.fontawesome.com/c4760a88bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path_to_font_awesome_css_file.css">
+    <script src="sign_up.js" defer></script>
+    <title>success academy</title>
+</head>
+<body>
+    <header >
+        <div>
+            <img src="images/graduate.png" alt="">
+            <h1 >Success Academy</h1>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#e-learn">e-learning</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#assessments">Assessments</a></li>
+                    <li><a href="#contact">Instructors</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="signup" id="home">
+        <div><h2>Create an account</h2></div>
+        <div>
+            <form action="login.php" method="post">
+            <!-- Sign up form goes here -->
+            <label for="Fname">First Name:</label>
+            <input type="text" id="Fname" name="Fname" required>
+
+            <label for="name">Last Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="password"  required>
+            
+            <button class="click" type="submit">Sign Up</button>
+            </form>
+        </div>
+        <p>Already have an account ? <a href="sign_in.html">sign in here</a></p>
+    </section>
+
+    <section class="courses" id="courses" >
+        <div class="cadre">
+        <h2 id="title">Our Popular courses </h2>
+        </div>
+        <!-- Our Popular courses -->
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Data Science</h3>
+                <img src="images/Data.png" alt="">
+                <!-- <div><i class="fa-solid fa-angle-right"></i></div>-->
+                <div id="eval">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div><a href="#"><button class="btn"><i class="fa-solid fa-angle-right"></i></button></a></div>
+            </div>
+        
+            <div class="box">
+                <h3>Web Development</h3>
+                <img src="images/dev.png" alt="">
+                <div id="eval">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div><a href="#"><button class="btn"><i class="fa-solid fa-angle-right"></i></button></a></div>
+            </div>
+        
+            <div class="box">
+                <h3>UX/UI design</h3>
+                <img src="images/UX.jpg" alt="">
+                <div id="eval">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div><a href="#"><button class="btn"><i class="fa-solid fa-angle-right"></i></button></a></div>
+            </div>
+        
+            <div class="box">
+                <h3>Cloud Computing</h3>
+                <img src="images/cloud.jpg" alt="">
+                <div id="eval">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div><a href="#"><button class="btn"><i class="fa-solid fa-angle-right"></i></button></a></div>
+            </div>
+        
+        </div>
+    </section>
+    <section class="e-learn" id="e-learn">
+        <div class="cadre">
+            <h2 id="title">Future Of E-learning</h2>
+        </div>
+            <div id="writing">
+                <li><i class="fas fa-check-circle"></i> Global Reach</li>
+                <li><i class="fas fa-check-circle"></i> Cost-Effectiveness</li>
+                <li><i class="fas fa-check-circle"></i> Up-to-Date Content</li>
+                <li><i class="fas fa-check-circle"></i> Interactive and Engaging</li>
+                <li><i class="fas fa-check-circle"></i> Self-Paced Learning</li>
+                <li><i class="fas fa-check-circle"></i> Continuous Learning and Skill Development</li>
+            </div>
+    </section>
+
+    <section class="assessments" id="assessments">
+        <div class="cadre">
+        <h2 id="title">Online Assessments</h2>
+        </div>
+        <!-- Online assessments content goes here -->
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Homework</h3>
+                <img src="images/homework.jpg" alt="">
+                <div><a href="homework.html"><button class="btn"><i class="fa-solid fa-angle-right"></i></button></a></div>               
+            </div>
+        
+            <div class="box">
+                <h3>Quizes</h3>
+                <img src="images/quiz.png" alt="">
+                <div><a href="#"><button class="btn"><i class="fa-solid fa-angle-right"></i></button></a></div>
+            </div>
+        
+            <div class="box">
+                <h3>Tests</h3>
+                <img src="images/test.jpg" alt="">
+                <div><a href="#"><button class="btn"><i class="fa-solid fa-angle-right"></i></button></a></div>
+            </div>
+        
+        </div>
+    </section>
+
+    <section class="communication" id="contact">
+        <h2 id="title">Contact our instructors</h2>
+        <!-- Communication features go here -->
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Emily</h3>
+                <img src="images/P1.jpg" alt="">
+                <div><button class="btn1">Contact now</button></div>
+            </div>
+        
+            <div class="box">
+                <h3>Jackson</h3>
+                <img src="images/p2.png" alt="">
+                <div><button class="btn1">Contact now</button></div>
+            </div>
+        
+            <div class="box">
+                <h3>David</h3>
+                <img src="images/p3.jpg" alt="">
+                <div><button class="btn1">Contact now</button></div>
+            </div>
+    
+        
+        </div>
+    </section>
+
+   <!-- <section class="upload" >
+        <h2 id="title">Upload Documents</h2>
+        <input type="file" id="documentUpload" accept=".pdf, .doc, .docx">
+
+    </section> -->
+
+    <footer>
+        <p>&copy; 2023 Success Academy Platform. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

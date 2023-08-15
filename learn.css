@@ -1,0 +1,342 @@
+:root{
+    --orange: rgb(235, 146, 2);
+}
+
+body {
+
+    background-image: linear-gradient(45deg,var(--orange) 50%,#ffffff 100%);
+    height: 100vh;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+
+}
+html{
+    overflow-x: hidden;
+}
+
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.8) ;
+    color: rgb(220, 117, 0);
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+header div{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: rgb(220, 117, 0);
+    text-decoration: none;
+}
+
+
+
+nav ul li a{
+    position: relative;
+}
+
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom:-.5rem; right:0;
+    width:0%;
+    height:.2rem;
+    background:#fff;
+    transition: .2s linear;
+}
+
+nav ul li a:focus{
+    color:#fff;
+}
+nav ul li a.active::before,
+nav ul li a:hover::before{
+    left:0;
+    width:100%;
+}
+
+section {
+    padding: 2rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+.signup{
+    float:center;
+    background-color: #fff;
+    width:700px;
+    border: 2px solid #979494;
+    padding: 30px;
+    border-radius: 15px;
+    margin-left: 35rem;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+    box-shadow: 2px 0px 10px 0px rgba(82, 82, 82, 0.4);
+}
+.signup h2{ 
+    text-align: center;
+}
+input{
+    display: block;
+    border: 2px solid #ccc;
+    width:50%;
+    padding:10px;
+    margin:10px auto;
+    border-radius: 15px;
+    cursor:pointer;
+}
+.click{
+    float: right;
+    bottom: 20rem;
+    background: #555;
+    padding: 10px 40px;
+    color:#fff;
+    border-radius: 5px;
+    margin-right: 11rem;
+    margin-top:20px;
+    margin-bottom: 0px;
+    border:none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    cursor:pointer;
+}
+
+.click:hover{
+    opacity: .7;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2)
+}
+form{
+    margin-bottom: 5rem;
+}
+label{
+    padding: 10.5rem;
+    
+}
+.signup p{
+    text-align: center;
+
+}
+  /* Style for the input field */
+  input[type="password"], input[type="email"]{
+    font-size: 16px; 
+    padding: 10px; 
+  }
+
+  /* Style for the placeholder text */
+  input[type="password"],input[type="email"]::placeholder {
+    font-size: 16px; 
+
+  }
+  .courses{
+    min-height: 90vh;
+    background:#ffffff;
+    padding-top: 6rem;
+
+  }
+  .e-learn{
+    min-height: 90vh;
+    background:var(--orange);
+    padding:2rem;
+    padding-top: 6rem;
+  }
+  .assessments{
+    min-height: 90vh;
+    background:white;
+    padding:2rem;
+    padding-top: 6rem;
+  }
+  .communication{
+    min-height: 90vh;
+    background:var(--orange);
+    padding:2rem;
+    padding-top: 6rem;
+  }
+  section #title{
+    text-align: center;
+    background:gray;
+    width:20rem;
+    line-height: 2em;
+    font-size: 25px;
+    color:#fff;
+    position: relative;
+    left:47.5rem;
+    border-radius: 15px;
+    box-shadow: 4px 4px 2px 1px rgba(81, 81, 81, 0.4);
+
+
+  }
+.box-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    margin-top:8rem;
+}
+.box-container .box{
+    margin:1rem;
+    background:#ffffff;
+    padding:1rem 2rem 5rem 2rem;
+    border: 2px solid #979494;
+    border-radius: 15px;
+    box-shadow: 12px 12px 2px 1px #979494;
+}
+.box-container .box #eval{
+    position: relative;
+    top:4rem;
+}
+.box-container .box h3{
+    text-align: center;
+}
+
+/*.box-container .box div {
+    background:var(--orange);
+    border-radius: 50%;
+    width:40px;
+    height: 40px;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+.box-container .box div i {
+    padding-top: 10px;
+    margin-left: 1rem;
+}*/
+
+  
+  .box img {
+    width: 200px; 
+    height:120px; 
+    padding-top: 3rem;
+
+  }
+  .btn{
+    background:var(--orange);
+    border-radius: 50%;
+    width:40px;
+    height: 40px;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    border: none;
+    box-shadow: 4px 2px 2px 1px rgba(81, 81, 81, 0.4);
+  }
+
+  .btn:hover{
+    background:gray;
+    cursor: pointer;
+  }
+  .btn1:hover{
+    background:var(--orange);
+    cursor: pointer;
+  }
+  .btn1{
+    float: right;
+    margin-top:2rem;
+    background: #555;
+    padding: 10px 10px;
+    color:#fff;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    cursor:pointer;
+}
+
+  /*.cadre{
+    display: flex;
+    align-items: center;
+    height:12rem;
+    width:100%;
+    top:0rem;
+    background-image: linear-gradient(100deg,var(--orange) 40%,#ffffff 100%);
+    border-radius: 15px;
+  }*/
+
+  .e-learn #writing{
+    margin-left:10rem;
+    width:50%;
+    margin-top: 5rem;
+}
+.e-learn #writing li{
+  list-style: none;
+  font-size: 2rem;
+  color:#000000;
+  padding:.5rem 0;
+  line-height: 2em;
+}
+.e-learn #writing li:hover{
+  color:#ffffff;
+
+}
+
+@media (max-width: 768px) {
+  body {
+      font-size: 16px; /* Adjust font size for better readability */
+  }
+
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header nav {
+      margin-top: 10px;
+  }
+
+  .signup {
+      width: 90%; 
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  section #title {
+      left: 50%; 
+      transform: translateX(-50%);
+  }
+
+  .box-container .box {
+      width: 90%; 
+      margin: 1rem auto;
+  }
+
+  .box img {
+      width: 100%; 
+      height: auto;
+  }
+  .btn, .btn1 {
+    margin-left:20rem;
+}
+
+  .e-learn #writing {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%; 
+  }
+
+  .e-learn #writing li {
+      font-size: 1.5rem; 
+  }
+}

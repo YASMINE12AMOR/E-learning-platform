@@ -1,0 +1,242 @@
+
+:root{
+    --orange: rgb(235, 146, 2);
+}
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+
+    background-color: var(--orange);
+    font-size: 20px;
+    overflow-x: hidden;
+    line-height: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.8) ;
+    color: rgb(220, 117, 0);
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    
+}
+header div{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: rgb(220, 117, 0);
+    text-decoration: none;
+}
+
+
+
+nav ul li a{
+    position: relative;
+}
+
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom:-.5rem; right:0;
+    width:0%;
+    height:.2rem;
+    background:#fff;
+    transition: .2s linear;
+}
+
+nav ul li a:focus{
+    color:#fff;
+}
+nav ul li a.active::before,
+nav ul li a:hover::before{
+    left:0;
+    width:100%;
+}
+  
+.box img {
+    width: 200px; 
+    height:120px; 
+    padding-top: 3rem;
+
+  }
+
+
+.box-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    margin-top:8rem;
+}
+.box-container .box{
+    margin:1rem;
+    background:#ffffff;
+    padding:1rem 2rem 5rem 2rem;
+    border: 2px solid #979494;
+    border-radius: 15px;
+    box-shadow: 12px 12px 2px 1px #979494;
+}
+.cadre{
+    text-align: center;
+    background:gray;
+    width:50%;
+    line-height: 2em;
+    font-size: 25px;
+    color:var(--orange);
+    position: relative;
+    left:30rem;
+    top:10rem;
+    border-radius: 15px;
+    box-shadow: 4px 4px 2px 1px rgba(81, 81, 81, 0.4);
+
+  }
+  .assessments{
+    margin-top: 15rem;
+  }
+
+  .load{
+    background-color: #fff;
+    width:20%;
+    border-radius:15px;
+    padding:1.12em 3.25em;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-top: 2rem;
+
+  }
+  input[type="file"]{
+    display: none;
+  }
+  label{
+    display:block;
+    position:relative;
+    background-color: var(--orange);
+    font-size: 1.12em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    text-align: center;
+    width:4em;
+    margin:auto;
+    border-radius: 15px;
+    cursor:pointer;
+    right: 1rem;
+  }
+  #num-of-files{
+    font-weight: 400;
+    text-align: center;
+    margin: 1.25em 0 1.87 0;
+  }
+  ul{
+    list-style-type: none;
+  }
+  :root{
+    --orange: rgb(235, 146, 2);
+}
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: var(--orange);
+    font-size: 20px;
+    overflow-x: hidden;
+    line-height: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.8) ;
+    color: rgb(220, 117, 0);
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Existing styles for header and nav */
+
+.cadre{
+    text-align: center;
+    background:gray;
+    width:50%;
+    line-height: 2em;
+    font-size: 25px;
+    color:var(--orange);
+    position: relative;
+    left:30rem;
+    top:10rem;
+    border-radius: 15px;
+    box-shadow: 4px 4px 2px 1px rgba(81, 81, 81, 0.4);
+}
+
+@media (max-width: 768px) {
+    .cadre {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10rem;
+    }
+
+    .assessments {
+        margin-top: 10rem; 
+    }
+
+    .box-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+        margin: 2rem 0;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+        padding-top: 1rem; 
+    }
+
+    .load {
+        width: 80%;
+        padding: 1rem; 
+        margin-top: 1rem; 
+    }
+
+    label {
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem; 
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    #num-of-files {
+        margin: 0.5rem 0 1rem 0; 
+    }
+}
