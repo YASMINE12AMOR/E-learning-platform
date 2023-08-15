@@ -170,7 +170,6 @@ th,td{
         margin-left: 0;
     }
 
-    /* Hide second column in recent payments table */
     .content .content-2 .recent-payments table th:nth-child(2),
     .content .content-2 .recent-payments table td:nth-child(2) {
         display: none;
